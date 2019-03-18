@@ -1,0 +1,92 @@
+\input{Common/Common.tex}
+
+\begin{document}
+
+\section*{Questionnaire}
+
+\subsection*{Personal details}
+
+Please tell us some personal information:
+\begin{itemize}
+\item[Age:] \underline{\hspace{2cm}}
+\item[Gender:] \underline{\hspace{2cm}}
+\end{itemize}
+
+Please state your experience with robots:
+\begin{itemize}
+\item[$\ocircle$] I have worked with robots before.
+\item[$\ocircle$] I have interacted with robots before.
+\item[$\ocircle$] I have seen robots in reality or on television.
+\item[$\ocircle$] I am unfamiliar with robots.
+\end{itemize}
+
+\pagebreak
+
+\subsection*{Physical safety}
+Please rate how critical you would consider the following physical hazards, considering only physical harm to people:\\
+\likertquestion[Safe][Dangerous]{The gas oven in the kitchen has been left on accidentally.}
+\likertquestion[Safe][Dangerous]{The wall socket power switches in the kitchen have been left on accidentally.}
+\likertquestion[Safe][Dangerous]{The Pepper robot is overheating.}
+
+\pagebreak
+
+\subsection*{Robot rating}
+Using the scale provided, how closely do you associate the following attributes with \robot?%
+\begin{center}
+\begin{table}[h]
+  \centering
+    \csvreader[RSscale]{RoSAS/RoSAS-items.csv}{}%
+    {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{table}
+\end{center}
+\pagebreak
+
+\subsection*{Robot rating}
+Please rate your impression of \robot{} on these scales:%
+\begin{center}
+\begin{table}[h]
+  \centering
+    \csvreader[GSscale]{GodSpeed/GodSpeed-items.csv}{}%
+    {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & \csvcolii}%
+\end{table}
+\end{center}
+
+\subsection*{Emotional state}
+Please rate your own emotional state on these scales:
+\begin{center}
+\begin{table}[h]
+  \centering
+    \csvreader[GSscale]{GodSpeed/GodSpeed-items-estate.csv}{}%
+    {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & \csvcolii}%
+\end{table}
+\end{center}
+
+\pagebreak
+
+\subsection*{Robot safety}
+Please state how much you agree with the following statements based on your interaction with \robot{}:\\
+\likertquestion{\robot{} can identify hazards accurately and reliably.}
+\likertquestion{\robot{} can accurately judge when a situation requires human intervention.}
+\likertquestion{\robot{} requests human intervention when not needed.}
+\likertquestion{\robot{} does not request human intervention when it is needed.}
+\likertquestion{\robot{} is likely to make the home environment safer.}
+\likertquestion{\robot{} will have no effect on the safety of the home environment.}
+
+\pagebreak
+
+\subsection*{Robot sociability}
+Please state how much you agree with the following statements regarding your interaction with \robot{}:\\
+\likertquestion{\robot{} acted in a socially appropriate way.}
+\likertquestion{\robot{} itself seemed socially aware.}
+\likertquestion{\robot{} was malfunctioning at some point.}
+\likertquestion{\robot{} was irritating on purpose.}
+
+\pagebreak
+
+\subsection*{Comments}
+\openquestion{When prompted by \robot{} to turn off the oven, why did you/did you not choose to do this?}\\
+\openquestion{When prompted by \robot{} to turn off the power switches, why did you/did you not choose to do this?}\\
+\openquestion{When prompted by \robot{} to relax Pepper's joints, why did you/did you not choose to do this?}\\
+\openquestion{Do you have any general impressions about \robot{} during your interaction with it?}\\
+\openquestion{Do you have any questions you would like to ask us?}
+\end{document}
