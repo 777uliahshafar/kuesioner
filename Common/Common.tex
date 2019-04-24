@@ -48,7 +48,10 @@
 \setlist{leftmargin=1.5cm,itemsep=.5\baselineskip,before=\vspace{.5\baselineskip},after=\vspace{\baselineskip}}
 
 % define the robot's name
-\def \robot {Care-O-Bot}
+\def \robot {the robot}%
+\newcommand{\setrobot}[1]{%
+\def \robot {#1}%
+}
 
 % multiple optional arguments in newcommand, loops
 \usepackage{xparse}
