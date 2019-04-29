@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+
+% personalise page geometry, e.g., margin,
+% for your printer and needs
+\usepackage[
+  a4paper,
+  left = 20mm,
+  top = 20mm,
+  bottom = 15mm,
+]{geometry}
+
+% switch off page numbering
+\pagenumbering{gobble}
+
+% use for generating tables
+\usepackage{csvsimple}
+\csvstyle{GSscale}{
+  tabular=r|c|c|c|c|c|l,
+  table head =
+      & 1 & 2 & 3 & 4 & 5 &\\\hline,
+  late after line = \\\hline,
+  head=false
+}
+\csvstyle{RSscale}{
+  tabular=r|c|c|c|c|c|c|c|, 
+  table head = 
+      & 1 & 2 & 3 & 4 & 5 & 6 & 7\\\hline, 
+  late after line = \\\hline,
+  head=false
+}
+
+% for circle box
+\usepackage{wasysym}
+
+% indents in itemizes
+\usepackage{enumitem}
+
+% switch to sans serif
+\renewcommand{\familydefault}{\sfdefault}
+
+% factor for table padding
+\renewcommand{\arraystretch}{1.6}
+
+% spacing for itemizes
+\usepackage{setspace}
+\setlength{\parindent}{0cm}
+% \doublespacing
+\setlist{leftmargin=1.5cm,itemsep=.5\baselineskip,before=\vspace{.5\baselineskip},after=\vspace{\baselineskip}}
+
+% define the robot's name
+\def \robot {the robot}%
+\newcommand{\setrobot}[1]{%
+\def \robot {#1}%
+}
+
+% multiple optional arguments in newcommand, loops
+\usepackage{xparse}
+\usepackage{pgffor}
+
+% handy for open questions
+\newcommand{\openquestion}[1]{#1\\[1em]%
+\underline{\hspace{\textwidth}}\\[1.5em]%
+\underline{\hspace{\textwidth}}\\[1.5em]%
+\underline{\hspace{\textwidth}}\\[1.5em]}
+
+\newcounter{scaleCounter}
+\newcommand{\createLikertHeader}{
+
+
+}
+
+% handy for likert-style questions
+\NewDocumentCommand{\likertquestion}{ O{Strongly disagree} O{Strongly agree} O{5} m }{%
+\setcounter{scaleCounter}{0}
+\def\ltablecfg{}
+\loop\ifnum\thescaleCounter<#3
+  \stepcounter{scaleCounter}
+  \edef\ltablecfg{%
+    \ltablecfg
+    c|
+  }%
+\repeat
+
+\setcounter{scaleCounter}{0}
+\def\lheader{}
+\loop\ifnum\thescaleCounter<#3
+  \stepcounter{scaleCounter}
+  \edef\lheader{%
+    \lheader
+    \arabic{scaleCounter} &
+  }%
+\repeat
+
+\setcounter{scaleCounter}{0}
+\def\lbullets{}
+\loop\ifnum\thescaleCounter<#3
+  \stepcounter{scaleCounter}
+  \edef\lbullets{%
+    \lbullets
+    $\ocircle$ &
+  }%
+\repeat
+
+\begin{center}%
+#4\\[1em]%
+\begin{tabular}{r|\ltablecfg l}%
+ & \lheader \\%
+\hline%
+#1 & \lbullets #2\\
+\hline%
+\end{tabular}%
+\\[2em]
+\end{center}%
+}

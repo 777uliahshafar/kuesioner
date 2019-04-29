@@ -28,3 +28,12 @@
 ## Build tool directories for auxiliary files
 # latexrun
 latex.out/
+
+# IDE files
+.kile/
+*.kilepr
+
+# Build results
+RoSAS.pdf
+GodSpeed.pdf
+My-Questionnaire.pdf
