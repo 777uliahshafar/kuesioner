@@ -16,8 +16,15 @@ The [RoSAS](https://dl.acm.org/citation.cfm?id=3020208) designed by Carpinella e
 
 Example: [PDF](https://gitlab.com/scheunemann/latex-questionnaire/-/jobs/artifacts/master/raw/RoSAS/RoSAS.pdf?job=PDFs)
 
+## MDRAS scale (likert-type scale)
+The [MDRAS](https://link.springer.com/chapter/10.1007/978-3-319-25554-5_48) is a validated questionnaire to assess people's attitudes towards robots in 12 dimensions.
+
+Example: [PDF](https://gitlab.com/scheunemann/latex-questionnaire/-/jobs/artifacts/master/raw/MDRAS/MDRAS.pdf?job=PDFs)
+
 # References
 - Bartneck, C., Kulić, D., Croft, E. and Zoghbi, S., 2009. Measurement Instruments for the Anthropomorphism, Animacy, Likeability, Perceived Intelligence, and Perceived Safety of Robots. _International journal of social robotics, 1_(1), pp.71-81.
 
 - Carpinella, C.M., Wyman, A.B., Perez, M.A. and Stroessner, S.J., 2017, March. The Robotic Social Attributes Scale (RoSAS): Development and Validation. In _Proceedings of the 2017 ACM/IEEE International Conference on human-robot interaction_ (pp. 254-262). ACM.
+
+- Ninomiya T., Fujita A., Suzuki D., Umemuro H. (2015) Development of the Multi-dimensional Robot Attitude Scale: Constructs of People’s Attitudes Towards Domestic Robots. In: Tapus A., André E., Martin JC., Ferland F., Ammi M. (eds) Social Robotics. ICSR 2015. Lecture Notes in Computer Science, vol 9388. Springer, Cham
 
