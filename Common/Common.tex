@@ -12,6 +12,9 @@
 % switch off page numbering
 \pagenumbering{gobble}
 
+% for breaking longer tables across pages
+\usepackage{longtable}
+
 % use for generating tables
 \usepackage{csvsimple}
 \csvstyle{GSscale}{
@@ -21,12 +24,22 @@
   late after line = \\\hline,
   head=false
 }
+
 \csvstyle{RSscale}{
   tabular=r|c|c|c|c|c|c|c|, 
   table head = 
       & 1 & 2 & 3 & 4 & 5 & 6 & 7\\\hline, 
   late after line = \\\hline,
   head=false
+}
+
+\csvstyle{LongScale}{
+  separator=semicolon,
+  longtable=p{.67\textwidth}|c|c|c|c|c|c|c|,
+  table head=
+    & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\hline \endhead \endfoot,
+  late after line = \\\hline,
+  head=false,
 }
 
 % for circle box
