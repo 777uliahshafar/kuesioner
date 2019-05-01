@@ -26,5 +26,5 @@ Example: [PDF](https://gitlab.com/scheunemann/latex-questionnaire/-/jobs/artifac
 
 - Carpinella, C.M., Wyman, A.B., Perez, M.A. and Stroessner, S.J., 2017, March. The Robotic Social Attributes Scale (RoSAS): Development and Validation. In _Proceedings of the 2017 ACM/IEEE International Conference on human-robot interaction_ (pp. 254-262). ACM.
 
-- Ninomiya T., Fujita A., Suzuki D., Umemuro H. (2015) Development of the Multi-dimensional Robot Attitude Scale: Constructs of People’s Attitudes Towards Domestic Robots. In: Tapus A., André E., Martin JC., Ferland F., Ammi M. (eds) Social Robotics. ICSR 2015. Lecture Notes in Computer Science, vol 9388. Springer, Cham
+- Ninomiya T., Fujita A., Suzuki D., Umemuro H., 2015. Development of the Multi-dimensional Robot Attitude Scale: Constructs of People’s Attitudes Towards Domestic Robots. In _Tapus A., André E., Martin JC., Ferland F., Ammi M. (eds) Social Robotics. ICSR 2015. Lecture Notes in Computer Science, vol 9388_. Springer, Cham
 
