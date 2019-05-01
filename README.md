@@ -1,7 +1,7 @@
 This template uses [LaTeX](https://www.latex-project.org/) (and [csvsimple](https://ctan.org/pkg/csvsimple)) for producing questionnaires.
 
 # Items
-For adapting the items, just change the `CSV`-file and recompile the `*.tex`. The order can be randomised with using, e.g., [https://www.random.org/lists/](https://www.random.org/lists/).
+Items are listed in the order they are presented in the publication source. To adapt the items, just change the `CSV`-file and recompile the `*.tex`. The order can be randomised with using, e.g., `shuf` on Linux or [https://www.random.org/lists/](https://www.random.org/lists/). For convenience, the corresponding factor for each item is given in the last column of the `CSV`-file.
 
 # Examples
 
