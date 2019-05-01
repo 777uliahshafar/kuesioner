@@ -1,20 +1,20 @@
-Machinelike,Humanlike
-Ignorant,Knowledgeable
-Awful,Nice
-Unkind,Kind
-Unintelligent,Intelligent
-Dislike,Like
-Dead,Alive
-Foolish,Sensible
-Unconscious,Conscious
-Artificial,Lifelike
-Fake,Natural
-Movingrigidly,Movingelegantly
-Incompetent,Competent
-Mechanical,Organic
-Stagnant,Lively
-Unpleasant,Pleasant
-Apathetic,Responsive
-Unfriendly,Friendly
-Irresponsible,Responsible
-Inert,Interactive
+Fake,Natural,Anthropomorphism
+Machinelike,Humanlike,Anthropomorphism
+Unconscious,Conscious,Anthropomorphism
+Artificial,Lifelike,Anthropomorphism
+Moving rigidly,Moving elegantly,Anthropomorphism
+Dead,Alive,Animacy
+Stagnant,Lively,Animacy
+Mechanical,Organic,Animacy
+Inert,Interactive,Animacy
+Apathetic,Responsive,Animacy
+Dislike,Like,Likeability
+Unpleasant,Pleasant,Likeability
+Unfriendly,Friendly,Likeability
+Unkind,Kind,Likeability
+Awful,Nice,Likeability
+Incompetent,Competent,Perceived Intelligence
+Ignorant,Knowledgeable,Perceived Intelligence
+Irresponsible,Responsible,Perceived Intelligence
+Unintelligent,Intelligent,Perceived Intelligence
+Foolish,Sensible,Perceived Intelligence
