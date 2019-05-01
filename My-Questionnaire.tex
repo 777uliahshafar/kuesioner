@@ -31,38 +31,33 @@ Example question:\\
 
 \pagebreak
 
+
+
 % RoSAS
 \subsection*{Robot rating}
 Using the scale provided, how closely do you associate the following attributes with \robot?%
 \begin{center}
-\begin{table}[h]
-  \centering
-    \csvreader[RSscale]{RoSAS/RoSAS-items.csv}{}%
-    {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
-\end{table}
+  \csvreader[RSscale]{RoSAS/RoSAS-items.csv}{}%
+  {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
 \end{center}
 
 \pagebreak
+
+
 
 % GodSpeed
 \subsection*{Robot rating}
 Please rate your impression of \robot{} on these scales:%
 \begin{center}
-\begin{table}[h]
-  \centering
-    \csvreader[GSscale]{GodSpeed/GodSpeed-items.csv}{}%
-    {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & \csvcolii}%
-\end{table}
+  \csvreader[GSscale]{GodSpeed/GodSpeed-items.csv}{}%
+  {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & \csvcolii}%
 \end{center}
 
 \subsection*{Emotional state}
 Please rate your own emotional state on these scales:
 \begin{center}
-\begin{table}[h]
-  \centering
-    \csvreader[GSscale]{GodSpeed/GodSpeed-items-estate.csv}{}%
-    {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & \csvcolii}%
-\end{table}
+  \csvreader[GSscale]{GodSpeed/GodSpeed-items-estate.csv}{}%
+  {\csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & \csvcolii}%
 \end{center}
 
 \pagebreak
