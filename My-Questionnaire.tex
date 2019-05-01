@@ -62,6 +62,20 @@ Please rate your own emotional state on these scales:
 
 \pagebreak
 
+
+
+% MDRAS
+\section*{Robot Rating}
+Please rate your impression of \robot{} on these scales:%
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+\pagebreak
+
+
+% Comments
 \subsection*{Comments}
 \openquestion{Why did you do XYZ?}\\
 \openquestion{Do you have any general impressions about \robot{} during your interaction with it?}\\

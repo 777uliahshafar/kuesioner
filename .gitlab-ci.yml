@@ -8,10 +8,13 @@ PDFs:
   - pdflatex -interaction=nonstopmode -halt-on-error GodSpeed.tex
   - cd ../RoSAS
   - pdflatex -interaction=nonstopmode -halt-on-error RoSAS.tex
+  - cd ../MDRAS
+  - pdflatex -interaction=nonstopmode -halt-on-error MDRAS.tex
   only:
   - master
   artifacts:
     paths:
     - My-Questionnaire.pdf
     - GodSpeed/GodSpeed.pdf
-    - RoSAS/RoSAS.pdf    
+    - RoSAS/RoSAS.pdf
+    - MDRAS/MDRAS.pdf
