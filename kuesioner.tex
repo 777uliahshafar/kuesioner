@@ -4,36 +4,67 @@
 
 \begin{document}
 
-\section*{Questionnaire}
+\section*{Kuesioner}
 
-\subsection*{Personal details}
+\subsection*{Data Diri}
 
-Please tell us some personal information:
+Mohon beritahu informasi data diri anda:
+
+Jenis Kelamin:
 \begin{itemize}
-\item[Age:] \underline{\hspace{2cm}}
-\item[Gender:] \underline{\hspace{2cm}}
+    \item[$\ocircle$] Laki-laki
+    \item[$\ocircle$] Perempuan
 \end{itemize}
 
-Please state your experience with robots:
 \begin{itemize}
-\item[$\ocircle$] I have worked with robots before.
-\item[$\ocircle$] I have interacted with robots before.
-\item[$\ocircle$] I have seen robots in reality or on television.
-\item[$\ocircle$] I am unfamiliar with robots.
+\item[Umur:] \underline{\hspace{2cm}}
+\end{itemize}
+
+Pekerjaan:
+\begin{itemize}
+\item[$\ocircle$] Pelajar
+\item[$\ocircle$] Karyawan
+\item[$\ocircle$] PNS
+\item[$\ocircle$] Wiraswasta
+\item[$\ocircle$] Lain-lain
 \end{itemize}
 
 \pagebreak
 
-\subsection*{Additional Questions}
-Example question:\\
-\likertquestion{Some arbitrary item using defaults.}
-\likertquestion[Good][Bad]{Another statement with optional opposites.}
+\subsection*{Pertanyaan lainnya}
+%% Akses
+\likertquestion[Tidak Penting][Penting]{Lebar jalan.}
+\likertquestion[Tidak Penting][Penting]{Kedekatan fasilitas.}
+%% Fasilitas
+\likertquestion[Tidak Penting][Penting]{Kehadiran fitur buatan (cth. bangku, lampu jalan).}
+\likertquestion[Tidak Penting][Penting]{Kehadiran fitur hijau (cth. tumbuhan, pohon, taman).}
+\likertquestion[Tidak Penting][Penting]{Kehadiran fitur biru (cth. kolam, danau, laut).}
+%% Estetika
+\likertquestion[Tidak Penting][Penting]{Kerapatan vegetasi (tumbuhan, pohon).}
+\likertquestion[Tidak Penting][Penting]{Kehadiran tumbuhan (cth. pohon, taman).}
+%% Keamanan
+\likertquestion[Tidak Penting][Penting]{Tingkat ketertutupan}
+\likertquestion[Tidak Penting][Penting]{Keramaian}
+%% Pemeliharaan
+\likertquestion[Tidak Penting][Penting]{Kondisi rumput}
+\likertquestion[Tidak Penting][Penting]{Grafiti}
+\likertquestion[Tidak Penting][Penting]{Sampah}
+
+%\likertquestion[Belum pernah berkunjung][Sudah pernah lebih dari satu]{Sampah}
+
+\fourlikert[Belum pernah][Pernah, lebih satu kali]{Test test}
+%\likertquestion{Some arbitrary item using defaults.}
+%\likertquestion[Good][Bad]{Another statement with optional opposites.}
+
+
 
 \pagebreak
 
 
 
 % RoSAS
+%\begin{comment}
+
 \subsection*{Robot rating}
 Using the scale provided, how closely do you associate the following attributes with \robot?%
 \begin{center}
@@ -75,6 +106,7 @@ Please rate your impression of \robot{} on these scales:%
 \pagebreak
 
 
+%\end{comment}
 % Comments
 \subsection*{Comments}
 \openquestion{Why did you do XYZ?}\\
