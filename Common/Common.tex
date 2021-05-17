@@ -7,7 +7,6 @@
   left = 20mm,
   top = 20mm,
   bottom = 15mm,
-  showframe
 ]{geometry}
 
 \usepackage{comment}
@@ -38,9 +37,17 @@
 }
 
 \csvstyle{LongScale}{
-  longtable=p{.67\textwidth}|c|c|c|c|c|c|c|,
+  longtable=p{.42\textwidth}|c|c|c|c|c|c|c|,
   table head=
     & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\hline \endhead \endfoot,
+  late after line = \\,
+  head=false,
+}
+
+\csvstyle{ShortScale}{
+  longtable=p{.1\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|,
+  table head=
+   Ruang & Belum pernah dengar & Belum pernah kesana & Pernah kesana sekali & Pernah kesana lebih sekali  \\\hline \endhead \endfoot,
   late after line = \\\hline,
   head=false,
 }
@@ -68,9 +75,9 @@
 
 % \doublespacing
 \setlist{
-    leftmargin=1.5cm,
-topsep=0pt,partopsep=0pt,
-    itemsep=.2\baselineskip,
+    leftmargin=2.5cm,
+topsep=0pt, partopsep=0pt,
+    itemsep=.15\baselineskip,
     before=\vspace{.5\baselineskip},
     after=\vspace{.5\baselineskip}
     }
@@ -91,6 +98,13 @@ topsep=0pt,partopsep=0pt,
 \underline{\hspace{.9\textwidth}}\\[1.5em]%
 \underline{\hspace{.9\textwidth}}\\[1.5em]}
 
+\newcommand{\score}[1]{#1%
+\begin{minipage}[b]{5cm}
+  \centering
+  \dotfill
+\end{minipage}%
+\underline{\hspace{.2\textwidth}}\\[1.5em]}
+
 \newcounter{scaleCounter}
 \newcommand{\createLikertHeader}{
 
@@ -98,7 +112,7 @@ topsep=0pt,partopsep=0pt,
 }
 
 % handy for likert-style questions
-\NewDocumentCommand{\likertquestion}{ O{Strongly disagree} O{Strongly agree} O{5} m }{%
+\NewDocumentCommand{\likertquestion}{ O{Strongly disagree} O{Strongly agree} O{7} m }{%
 \setcounter{scaleCounter}{0}
 \def\ltablecfg{}
 \loop\ifnum\thescaleCounter<#3

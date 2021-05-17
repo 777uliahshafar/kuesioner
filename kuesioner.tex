@@ -5,33 +5,50 @@
 \begin{document}
 
 \section*{Kuesioner}
+\subsection*{Data Pribadi}
 
-\subsection*{Data Diri}
+Mohon beritahu informasi tentang anda:
 
-Mohon beritahu informasi data diri anda:
-
-Jenis Kelamin:
 \begin{itemize}
-    \item[$\ocircle$] Laki-laki
-    \item[$\ocircle$] Perempuan
+\item[Jenis Kelamin:] \underline{\hspace{1cm}} Pria \underline{\hspace{1cm}} Wanita
+\item[Umur:] \underline{\hspace{1cm}} Tahun
 \end{itemize}
 
+Ras:
 \begin{itemize}
-\item[Umur:] \underline{\hspace{2cm}}
+\item[$\ocircle$] Bugis
+\item[$\ocircle$] Bukan Bugis
 \end{itemize}
 
 Pekerjaan:
 \begin{itemize}
-\item[$\ocircle$] Pelajar
 \item[$\ocircle$] Karyawan
-\item[$\ocircle$] PNS
 \item[$\ocircle$] Wiraswasta
-\item[$\ocircle$] Lain-lain
+\item[$\ocircle$] Pengangguran
+\item[$\ocircle$] Pelajar
+\item[$\ocircle$] Pensiun
 \end{itemize}
+
+\subsection*{Pertanyaan 1}
+Daftar berikut berisikan 2 ruang yang ada di Tepi Laut Senggol. Silahkan nilai ruang tersebut berdasarkan tingkat keakraban pada skala 4 tingkat dimana:
+
+\begin{description}
+    \item [1] = Belum pernah dengar
+    \item [2] = Belum pernah kesana
+    \item [3] = Pernah kesana sekali
+    \item [4] = Pernah kesana lebih sekali
+\end{description}
+% Table preferensi ruang
+\begin{center}
+  \csvreader[ShortScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
 
 \pagebreak
 
-\subsection*{Pertanyaan lainnya}
+\subsection*{Pertanyaan 2}
+Silahkan tunjukkan seberapa pentingnya fitur ruang berikut ini ketika mencari tempat di tepi laut.
+
 %% Akses
 \likertquestion[Tidak Penting][Penting]{Lebar jalan.}
 \likertquestion[Tidak Penting][Penting]{Kedekatan fasilitas.}
@@ -50,20 +67,60 @@ Pekerjaan:
 \likertquestion[Tidak Penting][Penting]{Grafiti}
 \likertquestion[Tidak Penting][Penting]{Sampah}
 
-%\likertquestion[Belum pernah berkunjung][Sudah pernah lebih dari satu]{Sampah}
+\pagebreak
 
-\fourlikert[Belum pernah][Pernah, lebih satu kali]{Test test}
-%\likertquestion{Some arbitrary item using defaults.}
-%\likertquestion[Good][Bad]{Another statement with optional opposites.}
+\subsection*{Pertanyaan 3}
+Silahkan nilai kesan anda terhadap ruang di tepi laut berikut dalam hal "kemudahan akses dengan lebar jalan yang tersedia" dengan skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Sangat Sulit <-------> Sangat Mudah}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
 
 
+\subsection*{Pertanyaan 4}
+Silahkan nilai kesan anda terhadap ruang di tepi laut berikut dalam hal "kemudahan akses dengan kedekatan fasilitas yang ada" dengan skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Sangat Sulit <-------> Sangat Mudah}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+
+\subsection*{Pertanyaan 4}
+Jika uang, waktu, dan halangan lainnya bukan pertimbangan, ruang mana berikut yang anda lebih sukai untuk dikunjungi? Silakan nilai dengan skala 100 tingkat dimana "1" artinya "kurang dicenderungi" dan 100 mewakili "sangat dicenderungi".
+
+    \begin{tabular}{p{.38\textwidth} c}
+    \textbf{Ruang} & \textbf{Nilai kecenderungan}\\
+    \end{tabular}
+\vspace{10pt}
+
+\score{Ruang A }
+\score{Ruang B }
+
+\pagebreak
+%-------------------------------------------------------------------------------------
+% Reference
+%-------------------------------------------------------------------------------------
+
+\begin{comment}
+% Comments
+\subsection*{Comments}
+\openquestion{Why did you do XYZ?}\\
+\openquestion{Do you have any general impressions about \robot{} during your interaction with it?}\\
+\openquestion{Do you have any questions you would like to ask us?}
 
 \pagebreak
 
-
-
 % RoSAS
-%\begin{comment}
 
 \subsection*{Robot rating}
 Using the scale provided, how closely do you associate the following attributes with \robot?%
@@ -94,22 +151,8 @@ Please rate your own emotional state on these scales:
 \pagebreak
 
 
+\end{comment}
 
 % MDRAS
-\section*{Robot Rating}
-Please rate your impression of \robot{} on these scales:%
-\begin{center}
-  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
-  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
-\end{center}
 
-\pagebreak
-
-
-%\end{comment}
-% Comments
-\subsection*{Comments}
-\openquestion{Why did you do XYZ?}\\
-\openquestion{Do you have any general impressions about \robot{} during your interaction with it?}\\
-\openquestion{Do you have any questions you would like to ask us?}
 \end{document}
