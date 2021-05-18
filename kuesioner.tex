@@ -24,7 +24,7 @@ Pekerjaan:
 \begin{itemize}
 \item[$\ocircle$] Karyawan
 \item[$\ocircle$] Wiraswasta
-\item[$\ocircle$] Pengangguran
+\item[$\ocircle$] Belum Bekerja
 \item[$\ocircle$] Pelajar
 \item[$\ocircle$] Pensiun
 \end{itemize}
@@ -44,58 +44,10 @@ Daftar berikut berisikan 2 ruang yang ada di Tepi Laut Senggol. Silahkan nilai r
   {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
 \end{center}
 
-\pagebreak
-
-\subsection*{Pertanyaan 2}
-Silahkan tunjukkan seberapa pentingnya fitur ruang berikut ini ketika mencari tempat di tepi laut.
-
-%% Akses
-\likertquestion[Tidak Penting][Penting]{Lebar jalan.}
-\likertquestion[Tidak Penting][Penting]{Kedekatan fasilitas.}
-%% Fasilitas
-\likertquestion[Tidak Penting][Penting]{Kehadiran fitur buatan (cth. bangku, lampu jalan).}
-\likertquestion[Tidak Penting][Penting]{Kehadiran fitur hijau (cth. tumbuhan, pohon, taman).}
-\likertquestion[Tidak Penting][Penting]{Kehadiran fitur biru (cth. kolam, danau, laut).}
-%% Estetika
-\likertquestion[Tidak Penting][Penting]{Kerapatan vegetasi (tumbuhan, pohon).}
-\likertquestion[Tidak Penting][Penting]{Kehadiran tumbuhan (cth. pohon, taman).}
-%% Keamanan
-\likertquestion[Tidak Penting][Penting]{Tingkat ketertutupan}
-\likertquestion[Tidak Penting][Penting]{Keramaian}
-%% Pemeliharaan
-\likertquestion[Tidak Penting][Penting]{Kondisi rumput}
-\likertquestion[Tidak Penting][Penting]{Grafiti}
-\likertquestion[Tidak Penting][Penting]{Sampah}
 
 \pagebreak
 
-\subsection*{Pertanyaan 3}
-Silahkan nilai kesan anda terhadap ruang di tepi laut berikut dalam hal "kemudahan akses dengan lebar jalan yang tersedia" dengan skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
-
-    \begin{tabular}{p{.48\textwidth} c}
-    & \textbf{Sangat Sulit <-------> Sangat Mudah}
-    \end{tabular}
-
-\begin{center}
-  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
-  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
-\end{center}
-
-
-\subsection*{Pertanyaan 4}
-Silahkan nilai kesan anda terhadap ruang di tepi laut berikut dalam hal "kemudahan akses dengan kedekatan fasilitas yang ada" dengan skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
-
-    \begin{tabular}{p{.48\textwidth} c}
-    & \textbf{Sangat Sulit <-------> Sangat Mudah}
-    \end{tabular}
-
-\begin{center}
-  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
-  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
-\end{center}
-
-
-\subsection*{Pertanyaan 4}
+\subsection*{Pertanyaan 1a}
 Jika uang, waktu, dan halangan lainnya bukan pertimbangan, ruang mana berikut yang anda lebih sukai untuk dikunjungi? Silakan nilai dengan skala 100 tingkat dimana "1" artinya "kurang dicenderungi" dan 100 mewakili "sangat dicenderungi".
 
     \begin{tabular}{p{.38\textwidth} c}
@@ -105,8 +57,140 @@ Jika uang, waktu, dan halangan lainnya bukan pertimbangan, ruang mana berikut ya
 
 \score{Ruang A }
 \score{Ruang B }
+\begin{comment}
+
+\subsection*{Pertanyaan 2}
+%Follow this article Preferences of older people for environmental attributes of local parks- The use of choice‐based conjoint analysis
+Silahkan tunjukkan seberapa pentingnya fitur ruang berikut ini ketika mencari tempat di tepi laut.
+
+\likertquestion[Tidak Penting][Penting]{Akses}
+\likertquestion[Tidak Penting][Penting]{Fasilitas}
+\likertquestion[Tidak Penting][Penting]{Estetika}
+\likertquestion[Tidak Penting][Penting]{Keamanan}
+\likertquestion[Tidak Penting][Penting]{Pemeliharaan}
+
+\end{comment}
+\subsection*{Pertanyaan 2}
+Silahkan tunjukkan seberapa pentingnya fitur ruang berikut ini ketika mencari tempat di tepi laut.
+%% Akses
+\likertquestion[Tidak Penting][Penting]{Lebar sebuah jalan.}
+\likertquestion[Tidak Penting][Penting]{Kedekatan fasilitas.}
+%% Fasilitas
+\likertquestion[Tidak Penting][Penting]{Kehadiran fitur buatan (cth. bangku, lampu jalan).}
+\likertquestion[Tidak Penting][Penting]{Kehadiran fitur hijau (cth. tumbuhan, pohon, taman).}
+\likertquestion[Tidak Penting][Penting]{Kehadiran fitur biru (cth. kolam, danau, laut).}
+%% Estetika
+\likertquestion[Tidak Penting][Penting]{Kerapatan vegetasi (tumbuhan, pohon).}
+\likertquestion[Tidak Penting][Penting]{Kehadiran tumbuhan (cth. pohon, taman).}
+%% Keamanan
+\likertquestion[Tidak Penting][Penting]{Ketertutupan sebuah ruang}
+\likertquestion[Tidak Penting][Penting]{Keramaian sebuah ruang}
+%% Pemeliharaan
+\likertquestion[Tidak Penting][Penting]{Kondisi Rumput}
+\likertquestion[Tidak Penting][Penting]{Vandalisme}
+\likertquestion[Tidak Penting][Penting]{Sampah}
 
 \pagebreak
+
+\subsection*{Pertanyaan 3}
+%Silahkan nilai kesan anda terhadap ruang di tepi laut berikut dalam hal "kemudahan akses dengan lebar jalan yang tersedia" dengan skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
+
+%Berdasarkan lebar jalan dan kedekatan fasilitas, bagaimana anda menilai ruang di kawasan tepi laut dalam hal "kemudahan atau kesulitanmu untuk mengakses sebuah ruang di kawasan tepi laut" pada skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
+
+Berdasarkan lebar jalan dan kedekatan fasilitas, silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "kemudahan atau kesulitanmu untuk mengakses sebuah ruang di kawasan tepi laut" pada skala 7 tingkat dimana "1" mewakili "sangat sulit" dan "7" artinya "sangat mudah".
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Sangat Sulit <-------> Sangat Mudah}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+
+\subsection*{Pertanyaan 4}
+Silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "Ketersediaan fitur buatan (cth. bangku, lampu jalan)" pada skala 7 tingkat dimana "1" mewakili "tidak ada" dan "7" artinya "sangat banyak".
+
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Tidak ada <-------> Sangat Banyak}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+
+\subsection*{Pertanyaan 5}
+Silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "Ketersediaan fitur hijau (cth. pohon, taman)" pada skala 7 tingkat dimana "1" mewakili "tidak ada" dan "7" artinya "sangat banyak".
+
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Tidak ada <-------> Sangat Banyak}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+
+\subsection*{Pertanyaan 6}
+Silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "Ketersediaan fitur hijau (cth. pohon, taman)" pada skala 7 tingkat dimana "1" mewakili "tidak ada" dan "7" artinya "sangat banyak".
+
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Tidak ada <-------> Sangat Banyak}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+\subsection*{Pertanyaan 7}
+Silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "Keindahan estetika (termasuk kerapatan vegetasi dan kehadiran tumbuhan)" pada skala 7 tingkat dimana "1" mewakili "sangat polos" dan "7" artinya "sangat indah".
+
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Sangat Polos <-------> Sangat Indah}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+
+\subsection*{Pertanyaan 8}
+Berdasarkan tingkat ketertutupan dan keramaian, silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "rasa aman ketika berada di kawasan tepi laut Senggol" pada skala 7 tingkat dimana "1" mewakili "sangat takut" dan "7" artinya "sangat aman".
+
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Sangat Takut <-------> Sangat Aman}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
+\subsection*{Pertanyaan 9}
+
+Silahkan nilai presepsi anda terhadap ruang-ruang di kawasan tepi laut dalam hal "pemeliharaan kawasan tepi laut (termasuk keadaan rumput, grafiti dan sampah)" pada skala 7 tingkat dimana "1" mewakili "sangat buruk" dan "7" artinya "sangat baik".
+
+
+    \begin{tabular}{p{.48\textwidth} c}
+    & \textbf{Sangat Takut <-------> Sangat Aman}
+    \end{tabular}
+
+\begin{center}
+  \csvreader[LongScale]{MDRAS/MDRAS-items.csv}{}%
+  {\raggedleft \csvcoli & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$ & $\ocircle$}%
+\end{center}
+
 %-------------------------------------------------------------------------------------
 % Reference
 %-------------------------------------------------------------------------------------
