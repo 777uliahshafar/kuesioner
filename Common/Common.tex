@@ -17,6 +17,10 @@
 % for breaking longer tables across pages
 \usepackage{longtable}
 
+% seperate a list (itemize) into multiple columns
+\usepackage{multicol}
+
+
 
 % use for generating tables
 \usepackage{csvsimple}
@@ -94,9 +98,9 @@ topsep=0pt, partopsep=0pt,
 
 % handy for open questions
 \newcommand{\openquestion}[1]{#1\\[1em]%
-\underline{\hspace{.9\textwidth}}\\[1.5em]%
-\underline{\hspace{.9\textwidth}}\\[1.5em]%
-\underline{\hspace{.9\textwidth}}\\[1.5em]}
+\centering\underline{\hspace{.95\textwidth}}\\[1.5em]%
+\underline{\hspace{.95\textwidth}}\\[1.5em]}
+%\underline{\hspace{.9\textwidth}}\\[1.5em]}
 
 \newcommand{\score}[1]{#1%
 \begin{minipage}[b]{5cm}
@@ -155,14 +159,14 @@ topsep=0pt, partopsep=0pt,
 \end{center}%
 }
 
-\NewDocumentCommand{\fourlikert}{ O{Strongly disagree} O{Strongly agree} O{4} m }{%
+\NewDocumentCommand{\fourlikert}{ O{Strongly disagree} O{Strongly agree} O{5} m }{%
 \setcounter{scaleCounter}{0}
 \def\ltablecfg{}
 \loop\ifnum\thescaleCounter<#3
   \stepcounter{scaleCounter}
   \edef\ltablecfg{%
     \ltablecfg
-    c|
+    p{0.65cm}|
   }%
 \repeat
 
@@ -186,14 +190,17 @@ topsep=0pt, partopsep=0pt,
   }%
 \repeat
 
+#4\\
+%[1em]%
 \begin{center}%
-#4\\[1em]%
 \begin{tabular}{r|\ltablecfg l}%
  & \lheader \\%
 \hline%
 #1 & \lbullets #2\\
 \hline%
 \end{tabular}%
-\\[2em]
+%\\[2em]
 \end{center}%
+
+
 }
