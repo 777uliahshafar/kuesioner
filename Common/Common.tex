@@ -10,16 +10,19 @@
 ]{geometry}
 
 \usepackage{comment}
+\usepackage{graphicx}
 
 % switch off page numbering
 \pagenumbering{gobble}
+
+\usepackage{array}
 
 % for breaking longer tables across pages
 \usepackage{longtable}
 
 % seperate a list (itemize) into multiple columns
 \usepackage{multicol}
-
+\usepackage{multirow}
 
 
 % use for generating tables
@@ -49,10 +52,10 @@
 }
 
 \csvstyle{ShortScale}{
-  longtable=p{.1\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|,
+  longtable=p{.3\textwidth} p{.23\textwidth} p{.23\textwidth} p{.23\textwidth},
   table head=
-   Ruang & Belum pernah dengar & Belum pernah kesana & Pernah kesana sekali & Pernah kesana lebih sekali  \\\hline \endhead \endfoot,
-  late after line = \\\hline,
+    & Ruang A & Ruang B &   \\\hline \endhead \endfoot,
+  late after line = \\,
   head=false,
 }
 
